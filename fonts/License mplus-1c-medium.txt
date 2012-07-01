@@ -1,0 +1,15 @@
+LICENSE
+
+These fonts are free softwares. Unlimited permission is granted to use, copy, and distribute it, with or without modification, either commercially and noncommercially. 
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+LINKS
+
+W3C - CSS3 module: Web Fonts 
+http://www.w3.org/TR/css3-webfonts/
+
+M+ FONTS - Project Info 
+http://sourceforge.jp/projects/mplus-fonts/
+
+M+ OUTLINE FONTS 
+http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/

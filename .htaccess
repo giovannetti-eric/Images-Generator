@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Transform
+# generator.php?width=600&height=400&background=000&color=FFF&text=MyText
+# to
+# /600x400/000/FFF/MyText
+RewriteRule ^([0-9]+)x([0-9]+)/?([a-zA-Z0-9]*)/?([a-zA-Z0-9]*)/?([a-zA-Z0-9_\-\s\.]*)$ generator.php?width=$1&height=$2&background=$3&color=$4&text=$5 [L]

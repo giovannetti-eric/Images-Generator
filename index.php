@@ -40,11 +40,11 @@
                         </label> -
                         <label for="bgColor">
                             <span class="text">Background :</span>
-                            <input type="text" name="bgColor" id="bgColor" value="000" size="6" maxlength="6">
+                            <input type="text" name="bgColor" id="bgColor" value="000000" size="6" maxlength="6">
                         </label> -
                         <label for="fgColor">
                             <span class="text">Color :</span>
-                            <input type="text" name="fgColor" id="fgColor" value="fff" size="6" maxlength="6">
+                            <input type="text" name="fgColor" id="fgColor" value="FFFFFF" size="6" maxlength="6">
                         </label> -
                         <label for="text">
                             <span class="text">Text :</span>
@@ -57,7 +57,7 @@
         </div>
 
         <footer id="footer">
-            &copy; <a href="http://eric.giovannetti.pro">Eric Giovannetti</a> - Initial sources : <a href="http://http://www.dummyimage.com/">Dynamic Dummy Image Generator</a>, <a href="http://www.devshed.com/c/a/PHP/Building-an-Image-Generator-Class-with-PHP-5/">Dev Shed</a>
+            By <a href="http://eric.giovannetti.pro">Eric Giovannetti</a> - Initial sources : <a href="http://http://www.dummyimage.com/">Dynamic Dummy Image Generator</a>, <a href="http://www.devshed.com/c/a/PHP/Building-an-Image-Generator-Class-with-PHP-5/">Dev Shed</a>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

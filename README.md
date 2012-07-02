@@ -41,4 +41,4 @@ http://images.giovannetti.pro/
 Version
 -------
 
-0.3
+0.4

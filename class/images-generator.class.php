@@ -66,18 +66,22 @@
         // convert hexadecimal CSS color number to decimal number
         private function hexaCssToDecimal($hex) {
 
-            $hex = ($hex[0] == '#') ? substr($hex, 1) : $hex; // remove preceding hash if present
+            // remove preceding hash if present
+            $hex = ($hex[0] == '#') ? substr($hex, 1) : $hex;
+
             $hexLenght = strlen($hex);
 
             if( !is_numeric('0x'.$hex) ) {
                 throw new Exception($hex.' is not a numeric value.');
             }
 
-            // split hexadecimal CSS color into RGB color and convert the color to decimal value
             if ( $hexLenght == 3 || $hexLenght == 6 ) {
-                $RGB = str_split($hex, $hexLenght/3); // split every 1 or 2 characters (shorthand or longhand version)
+                // split hexadecimal CSS color into RGB color (shorthand or longhand version)
+                $RGB = str_split($hex, $hexLenght/3);
                 foreach ($RGB as $color => $c) {
-                    $hexLenght == 3 ? $c .= $c : $c; // convert hexadecimal CSS shorthand to longhand if necessary
+                    // convert hexadecimal CSS shorthand to longhand if necessary
+                    $hexLenght == 3 ? $c .= $c : $c;
+                    // convert the color to a decimal value
                     $RGB[$color] = hexdec('0x{'.$c.'}');
                 }
             } else {

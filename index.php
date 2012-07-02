@@ -30,9 +30,13 @@
                 <form>
                     <fieldset>
                         <legend>Parameters :</legend>
-                        <label for="size">
-                            <span class="text">Width x Height :</span>
-                            <input type="text" name="size" id="size" value="600x400" size="8">
+                        <label for="width">
+                            <span class="text">Width :</span>
+                            <input type="text" name="width" id="width" value="640" size="4" maxlength="4">
+                        </label> -
+                        <label for="height">
+                            <span class="text">Height :</span>
+                            <input type="text" name="height" id="height" value="480" size="4" maxlength="4">
                         </label> -
                         <label for="bgColor">
                             <span class="text">Background :</span>
@@ -70,13 +74,16 @@
             	$('#parameters input').each(function(count) {
             		if( $(this).val() ) {
             			switch(count) {
-            				case 1:
-            					url += '/' + $(this).val();
-            				break;
+                            case 1:
+                                url += 'x' + $(this).val();
+                            break;
             				case 2:
             					url += '/' + $(this).val();
             				break;
             				case 3:
+            					url += '/' + $(this).val();
+            				break;
+            				case 4:
                                 url += '/' + $(this).val();
             				break;
             				default:

@@ -11,8 +11,8 @@
 
         public function __construct( $width = 640, $height = 480, $bgColor = '000000', $color = 'FFFFFF',  $text = '' ) {
 
-            $this->width   = $width;
-            $this->height  = $height;
+            $this->width   = intval($width);
+            $this->height  = intval($height);
             $this->bgColor = $this->hexaCssToDecimal($bgColor);
             $this->color   = $this->hexaCssToDecimal($color);
             $this->text    = empty($text) ? $width.' × '.$height : $text;
@@ -22,6 +22,16 @@
 
         // create image stream
         private function buildImageStream() {
+
+            $maxDimension = 9999;
+
+            if( !is_int($this->width) || !is_int($this->height) ) {
+                throw new Exception('Dimensions are not an integer.');
+            }
+
+            if( $this->width > $maxDimension || $this->height > $maxDimension ) {
+                throw new Exception('Dimension not allowed (max value : '. $maxDimension .').');
+            }
 
             if( !$this->img = imagecreate($this->width, $this->height) ){
                 throw new Exception('Error creating image stream.');

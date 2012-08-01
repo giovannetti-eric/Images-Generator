@@ -11,7 +11,7 @@
 
         <header id="header">
             <h1>Images Generator</h1>
-            <a class="fork-me" href="https://github.com/giovannetti-eric/Images-Generator" title="Fork me on GitHub"><img src="img/forkme.png" alt="Fork me on GitHub"></a>
+            <a class="fork-me" href="https://github.com/giovannetti-eric/Images-Generator" title="Fork me on GitHub"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
         </header>
 
         <div id="main" role="main">

@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+
         <header id="header">
             <h1>Images Generator</h1>
+            <a class="fork-me" href="https://github.com/giovannetti-eric/Images-Generator" title="Fork me on GitHub"><img src="img/forkme.png" alt="Fork me on GitHub"></a>
         </header>
 
         <div id="main" role="main">
@@ -57,7 +59,7 @@
         </div>
 
         <footer id="footer">
-            By <a href="http://eric.giovannetti.pro">Eric Giovannetti</a> - Initial sources : <a href="http://http://www.dummyimage.com/">Dynamic Dummy Image Generator</a>, <a href="http://www.devshed.com/c/a/PHP/Building-an-Image-Generator-Class-with-PHP-5/">Dev Shed</a>
+            By <a href="http://eric.giovannetti.pro">Eric Giovannetti</a> - Initial sources : <a href="http://www.dummyimage.com/">Dynamic Dummy Image Generator</a>, <a href="http://www.devshed.com/c/a/PHP/Building-an-Image-Generator-Class-with-PHP-5/">Dev Shed</a>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

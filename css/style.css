@@ -67,6 +67,12 @@ h1 {
     padding: 0;
 }
 
+.fork-me {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 #main {
     padding: 25px 5%;
     text-align: center;

@@ -32,12 +32,6 @@ You can also generate an image with this url format :
 - `http://domain.tld/640x480/000000/FFFFFF/Some-Text`
 
 
-Demo
------
-
-http://images.giovannetti.pro/
-
-
 Version
 -------
 
